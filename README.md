@@ -5,7 +5,7 @@ webpack示例2，比较完整的应用，图片css、js打包等
 + cnpm install
 # 打包
 + webpack
-#运行
+# 运行
 + npm run server
 # 或者
 + webpack-dev-server --progress --colors
