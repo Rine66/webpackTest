@@ -1,0 +1,7 @@
+$nav-color:green;
+#sassBox{
+    $width:150px;
+    width: $width;
+    height: 30px;
+    background: $nav-color;
+}
