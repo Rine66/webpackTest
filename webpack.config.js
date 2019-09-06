@@ -49,7 +49,7 @@ module.exports={
 //CSS进阶：SASS文件的打包和分离
 //CSS进阶：自动处理CSS3前缀
 //CSS进阶：消除未使用的CSS
-//给webpack增加babel支持（失败）
+//给webpack增加babel支持
 
 //打包后如何调试（已阅）
 //开发和生产并行设置（已阅）
@@ -159,6 +159,18 @@ module.exports={
 					}],
 					fallback:'style-loader'
 				})
+			},
+			{
+				test:/\.(jsx|js)$/,//给webpack增加babel支持,解析ES6
+				use:{
+					loader:'babel-loader',
+					options:{
+						presets:[
+							"es2015","react"
+						]
+					}
+				},
+				//exclude:/node_modules/
 			},
           ]
     },

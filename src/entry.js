@@ -11,3 +11,6 @@ $("#title").html("使用jQuery语法显示---------")
 
 var json = require('../config.json');
 document.getElementById("json").innerHTML = json.name+":sex:"+json.sex;
+
+let p = "张三"
+document.write(p);
